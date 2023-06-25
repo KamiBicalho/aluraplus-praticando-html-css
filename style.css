@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --texto-principal: #FFFFFF;
+    --texto-secundario: #C0C0C0;
+    --cor-botao: #167BF7;
+    --cor-de-fundo: #00030C;
+    --cor-destaque: #EC2F46;
+
+    --fonte-texto: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--texto-principal);
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.principal {
+    background-image: url("imagens/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.principal__titulo{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.container__imagem {
+    margin: 1.38em 0 3.38em 0;
+}
+
+.container__botao{
+    background-color: var(--cor-botao);
+    border-radius: 4px;
+    padding: 1em;
+    color: var(--texto-principal);
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 1px solid var(--texto-principal);
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--texto-secundario);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 8em;
+}
+
+.secundario__imagem{
+    width: 80%;
+    padding: 4em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.15em;
+}
+
+.descricao__paragrafo{
+    color: var(--texto-secundario);
+    line-height: 150%;
+}
+
+.container__botao__extra {
+    width: auto;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 40px 0 140px 0;
+}
+
+.dispositivos__lista__item {
+    font-weight: 700;
+    font-size: 2rem;
+}
